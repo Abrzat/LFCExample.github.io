@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0," />
+    <meta name="description" content="Order your own Coffee Beans!" />
+    <title>Little Farmers Coffee</title>
+    <link rel="stylesheet" href="../mystyle.css" />
+  </head>
+
+  <body link="navy" alink="navy" vlink="navy">
+    <!-- This section is going to be the header / navigation bar-->
+    <div>
+      <header>
+        <div class="headercontainer">
+          <div class="headlogo">
+            <img src="../img/logo.png" alt="" width="70vw" height="70vw" />
+          </div>
+          <div class="headtitle"><h1>Little Farmer's Coffee</h1></div>
+          <div class="headmenu">
+            <h2><a href="../Home.html">Home</a></h2>
+          </div>
+          <div class="headmenu">
+            <h2><a href="Aboutus.html">About Us</a></h2>
+          </div>
+          <div class="headmenu">
+            <h2><a href="Products.html">Our Products</a></h2>
+          </div>
+          <div class="headmenu">
+            <h2><a href="Testimonials.html">Testimonials</a></h2>
+          </div>
+          <div class="headmenu">
+            <h2><a href="Gallery.html">Gallery</a></h2>
+          </div>
+          <div class="headmenu">
+            <h2><a href="ContactUs.html">Contact Us</a></h2>
+			</div>
+            <div class="headmenu">
+              <h2>
+                <a class="foodPanda" href="https://www.foodpanda.ph/"
+                  >Food Panda</a
+                >
+              </h2>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+
+    <!-- This section is going to be title screen with the massive logo & transparent background that every single generic website has-->
+    <div class="titleScreen">
+      <div class="titleContainer">
+        <img src="../img/logo.png" alt="" width="290px" height="290px" />
+      </div>
+      <div class="titleText">
+        <h1>Little Farmer's Coffee</h1>
+        <h3><em>Choose the blend that you desire</em></h3>
+      </div>
+    </div>
+    <!--This section is going to be the contact us stuff-->
+    <section class="storeBG">
+      <div class="center sectionTitle storeTitleBG">
+        <h2 style="text-shadow: 0px 1px 20px black">Our Stores</h2>
+      </div>
+      <div class="storeContainer">
+        <div>
+          <p>Need to contact us? Do so quickly with this form:</p>
+        </div>
+      </div>
+      <div class="storeRegion">
+        <h1>Form</h1>
+        <hr />
+      </div>
+      <form
+        method="post"
+        action="mailto:abrerazoehart@gmail.com; /received.php "
+        autocomplete="on"
+      >
+        <div class="contactUsForm">
+          <p>
+            We are here for you! Contact us with the form below or use the
+            information provided in the
+            <u><a href="#footer">footer</a></u> below:
+          </p>
+          <br />
+        </div>
+        <div class="contactUsForm">
+          <div class="imgoinginsane">
+            <label for="fname">First Name:</label> <br />
+            <input type="text" id="fname" name="fname" /> <br />
+            <label for="lname">Last name:</label><br />
+            <input type="text" id="lname" name="lname" /><br />
+            <label for="phone">Phone number:</label> <br />
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="09XX-XXX-XXXX"
+              pattern="[0-9]{4}-[0-9]{3}-[0-9]{4}"
+            />
+          </div>
+          <div class="imgoinginsane" style="font-size: 25px">
+            <input type="radio" name="Reason" value="SaleFran" />Sales /
+            Franchising <br />
+            <input type="radio" name="Reason" value="Inquiry" />Inquiring <br />
+            <input type="radio" name="Reason" value="Report" />Report <br />
+            <input type="radio" name="Reason" value="Others" />Other <br />
+            <label for="ActualReason">Tell us your concerns:</label>
+            <textarea name="ActualReason" rows="9" cols="80"> </textarea>
+          </div>
+        </div>
+        <div class="contactUsForm" style="border-bottom: 3px solid white">
+          <input type="submit" />
+        </div>
+      </form>
+    </section>
+
+    <footer id="footer">
+      <div class="headlogo">
+        <img src="../img/logo.png" alt="" width="90vw" height="90vw" />
+      </div>
+      <div class="footContainer">
+        <h1 class="endText">Little Farmer's Coffee</h1>
+        <h1 class="endText">Get in touch with us!</h1>
+        <p style="width: 50%; text-align: center">
+          We would love to hear from you. Let us know about your experience at
+          any of our Little Farmers Coffee stores.If you have any questions
+          about our products or anything else that we could offer, use the
+          following below:
+        </p>
+      </div>
+      <hr style="border: 3px solid black; width: 90%" />
+      <div class="footContainer2">
+        <h4>For general inquiries, email: hello@littlefarmerscoffee.com</h4>
+        <h4>
+          For sales or franchising concerns, email:
+          sales@littlefarmerscoffee.com
+        </h4>
+        <h4>Main Office: +63 34 455 9067</h4>
+        <h4>Mobile: +63 917 727 2887</h4>
+        <h4>
+          <a href="https://facebook.com/littlefarmerscoffee"
+            >https://facebook.com/littlefarmerscoffee</a
+          >
+          <br />
+          <a href="https://instagram.com/coffeebylittlefarmers"
+            >https://instagram.com/coffeebylittlefarmers</a
+          >
+        </h4>
+      </div>
+    </footer>
+  </body>
+</html>

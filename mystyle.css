@@ -1,0 +1,484 @@
+body {
+  font-family: Serif, "Times New Roman", "Trebuchet MS", "Lucida Sans Unicode",
+    "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+  margin: 0;
+  background-color: #212121;
+}
+
+section {
+  background-color: white;
+  color: black;
+  margin: 0px;
+  box-shadow: 0px 0px 10px black;
+  border-top: 20px solid white;
+  border-bottom: 20px solid white;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+div {
+  margin: 0;
+}
+
+hr {
+  width: 80%;
+  border-radius: 5px;
+  border: 3px solid white;
+}
+
+footer {
+  background-image: url("img/foot.jpg");
+  background-color: white;
+  color: black;
+  margin: 0;
+  box-shadow: 0px 0px 5px;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  min-height: 500px;
+  position: relative;
+  isolation: isolate;
+}
+
+footer::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: rgb(255, 255, 255, 0.8);
+  opacity: 50%;
+  filter: blur(20px);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: goldenrod;
+}
+/*The next few CSS affects the navigation bar and the header*/
+.headercontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  column-gap: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.headlogo {
+  float: inline-start;
+}
+
+.headtitle {
+  float: inline-end;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+  flex-grow: 10;
+  margin: auto;
+}
+
+.headmenu {
+  flex-grow: 1;
+  color: white;
+  margin: auto;
+}
+
+header {
+  background-color: #212121;
+  color: black;
+  position: sticky;
+  width: 100%;
+  font-size: 15px;
+  box-shadow: 0px 0px 5px;
+}
+
+/*The next few CSS affects the main title / logo*/
+.titleScreen {
+  padding-bottom: 20px;
+  height: 75vh;
+  background-image: url("img/titlebg.png");
+  background-color: #212121;
+  background-position: 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0;
+  text-align: center;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2px;
+}
+
+.titleText {
+  color: white;
+  font-size: 30px;
+}
+
+.endText {
+  color: white;
+  font-size: 30px;
+  text-shadow: 0px 0px 2px black;
+}
+
+/*The next few CSS affects general text*/
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin: 0;
+  text-shadow: 0px 0px 2px black;
+}
+
+h3 {
+  margin: 0;
+  color: #f0e68c;
+  text-shadow: 0px 0px 5px black;
+}
+
+h4 {
+  margin: 0;
+}
+
+h5 {
+  margin: 0;
+}
+
+h6 {
+  margin: 0;
+}
+
+/*These next CSS are custom classes for specific things*/
+.center {
+  text-align: center;
+}
+
+.ArialHelvSans {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sectionTitle {
+  font-size: 36px;
+  padding-top: 80px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 50px;
+  column-gap: 100px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+  font-size: 35px;
+  border-radius: 25px;
+}
+
+.sectionImage {
+  border-radius: 25px;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.bringOpacityBGImage {
+  background-image: url("img/coffee.jpg");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  min-height: 500px;
+  position: relative;
+  isolation: isolate;
+}
+
+.bringOpacityBGImage::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: pink;
+  opacity: 30%;
+  filter: blur(10px);
+}
+
+.bgAboutUs {
+  background-image: url("img/section1coffee.jpg");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  min-height: 500px;
+  position: relative;
+  isolation: isolate;
+}
+
+.bgAboutUs::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: pink;
+  opacity: 30%;
+  filter: blur(10px);
+}
+
+.storeBG {
+  background-color: goldenrod;
+  padding: 50px;
+  margin-top: 20px;
+}
+
+.storeTitleBG {
+  background-color: #212121;
+  border-top-left-radius: 250px;
+  border-top-right-radius: 250px;
+  border-top: 3px solid white;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.storeContainer {
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 50px;
+  column-gap: 100px;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 1px 5px black;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+
+table,
+th,
+td {
+  border: 2px solid;
+  border-collapse: collapse;
+  border-color: white;
+  font-size: 1rem;
+  text-align: left;
+  padding: 25px;
+}
+
+th {
+  font-size: 25px;
+}
+
+.storeTable {
+  color: white;
+  border-radius: 5px;
+  background-color: #212121;
+}
+
+.storeRegion {
+  background-color: #212121;
+  text-align: center;
+  color: white;
+  text-shadow: 0px 1px 5px black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 35px;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.footContainer {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 5px;
+  column-gap: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 35px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+
+.footContainer2 {
+  background-color: rgb(255, 255, 255, 0.3);
+  box-shadow: 0px 0px 5px #212121;
+  padding: 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 5px;
+  column-gap: 5px;
+  margin-left: 50px;
+  margin-right: 50px;
+  font-size: 15px;
+  color: white;
+  text-shadow: 0px 0px 5px black;
+}
+
+.beanicon {
+  width: 200px;
+  height: 200px;
+}
+
+.productContainer {
+  background-color: #212121;
+  text-align: left;
+  color: white;
+  text-shadow: 0px 1px 5px black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  font-size: 25px;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+}
+
+.bgTestimonial {
+  background-image: url("img/testimonial.jpg");
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  min-height: 500px;
+  position: relative;
+  isolation: isolate;
+}
+
+.bgTestimonial::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background-color: pink;
+  opacity: 30%;
+  filter: blur(10px);
+}
+
+.testimonialContainer {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  row-gap: 50px;
+  column-gap: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+  font-size: 20px;
+  border-radius: 25px;
+}
+
+.galleryimages {
+  border-radius: 25px;
+  width: 165px;
+  height: 165px;
+  object-fit: cover;
+}
+
+.contactUsForm {
+  background-color: #212121;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  row-gap: 50px;
+  column-gap: 100px;
+  font-size: 35px;
+  text-align: left;
+  color: white;
+  text-shadow: 0px 1px 5px black;
+  border-left: 3px solid white;
+  border-right: 3px solid white;
+  padding: 50px;
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 0px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 20px;
+}
+
+input[type="tel"],
+select {
+  width: 100%;
+  padding: 12px 0px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+  font-size: 20px;
+}
+
+label {
+  font-size: 25px;
+}
+
+textarea,
+select {
+  width: 100%;
+  padding: 12px 0px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  text-align: left;
+  resize: none;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5px black;
+  font-size: 20px;
+}
+
+.imgoinginsane {
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 0px 5px black;
+  padding: 25px;
+  border-radius: 25px;
+}
+
+.foodPanda {
+  color: palevioletred;
+}
